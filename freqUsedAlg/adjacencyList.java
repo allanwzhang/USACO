@@ -6,6 +6,8 @@ public class adjacencyList {
 
 	public static void main(String[] args) {
 		int numFarms = 0;
+		
+		@SuppressWarnings("unchecked")
 		LinkedList<Integer>[] edges = new LinkedList[numFarms];
 		
 		for(int i = 0; i < numFarms; i++) {
@@ -14,6 +16,7 @@ public class adjacencyList {
 		int curr = 0; 
 		for(Integer neighbor : edges[curr]) {
 			//loop through neighbors
+			System.out.println(neighbor);
 		}
 	}
 
